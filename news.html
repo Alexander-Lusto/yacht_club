@@ -11,7 +11,7 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo logo" href="">
-        <img class="logo__image" width="64" height="68" alt="Логотип">
+        <img class="logo__image" src="img/logotype.svg" width="64" height="68" alt="Логотип">
       </a>
       <nav class="header__navigation navigation">
         <ul class="navigation__list">
@@ -51,7 +51,7 @@
         <ul class="user-navigation__list">
           <li class="user-navigation__item">
             <a class="user-navigation__link" href="#">
-              <img class="user-navigation__img" width="36" height="36" alt="Войти">
+              <img class="user-navigation__img" src="img/account.svg" width="36" height="36" alt="Войти">
             </a>
           </li>
         </ul>
@@ -93,7 +93,7 @@
       </div>
 
       <div class="article__column">
-        <img class="article__preview-photo" width="600" height="363" alt="Двое мужчин плывут на яхте">
+        <img class="article__preview-photo" src="img/article/article-1.jpg" width="600" height="363" alt="Двое мужчин плывут на яхте">
       </div>
     </section>
 
@@ -149,7 +149,7 @@
 
     <section class="article__content">
       <figure>
-        <img class="article__content-photo" src="" width="1170" height="530" alt="Двое мужчин управляют яхтой">
+        <img class="article__content-photo" src="img/article/article-2.jpg" width="1170" height="530" alt="Двое мужчин управляют яхтой">
         <figcaption class="article__content-photo-desc"> Михаил Чернов и Николай Петров</figcaption>
       </figure>
       <div class="article__column">
@@ -251,13 +251,19 @@
     <section class="article__socials socials">
       <ul class="socials__list">
         <li class="socials__item">
-          <a class="socials__link socials__link--facebook" href="#" aria-label="Фейсбук"></a>
+          <a class="socials__link socials__link--facebook" href="#" aria-label="Фейсбук">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--twitter" href="#" aria-label="Твиттер"></a>
+          <a class="socials__link socials__link--twitter" href="#" aria-label="Твиттер">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--insta" href="#" aria-label="Инстаграмм"></a>
+          <a class="socials__link socials__link--insta" href="#" aria-label="Инстаграмм">
+            <span class="visually-hidden">Инстаграмм</span>
+          </a>
         </li>
       </ul>
     </section>
@@ -268,16 +274,18 @@
       <p class="news-item__text">Выставка катеров и яхт Sochi Boat Show состоится с 19 по 29 июля 2023 года в нашем
         яхт-клубе. В программе будет ...</p>
       <figure>
-        <img class="news-item__image" src="" width="370" height="130" alt="Фотография яхты на причале">
+        <img class="news-item__image" src="img/news/news-2.jpg" width="370" height="130" alt="Фотография яхты на причале">
         <figcaption class="news-item__image-desc">Участник выставки – яхта Golsling 3.15</figcaption>
       </figure>
       <div class="news-item__author">
         <div class="news-item__author-wrapper">
-          <img class="news-item__author-avatar" width="37" height="37" alt="Аватар автора">
+          <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
           <span class="news-item__author-name">Денис Иванов</span>
           <time class="news-item__author-date" datetime="2022-06-15">15.06.2022</time>
         </div>
-        <button class="news-item__retweet-button"></button>
+        <button class="news-item__retweet-button">
+          <span class="visually-hidden">Ретвит</span>
+        </button>
       </div>
     </li>
     <li class="news__item news-item news-item">
@@ -287,16 +295,18 @@
         состоятся. С радостью сообщаем, что летняя ...
       </p>
       <figure>
-        <img class="news-item__image" src="" width="370" height="130" alt="Девушка стоит у руля яхты">
+        <img class="news-item__image" src="img/news/news-3.jpg" width="370" height="130" alt="Девушка стоит у руля яхты">
         <figcaption class="news-item__image-desc">Участница регаты 2021 Ирина Петрова</figcaption>
       </figure>
       <div class="news-item__author">
         <div class="news-item__author-wrapper">
-          <img class="news-item__author-avatar" width="37" height="37" alt="Аватар автора">
+          <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
           <span class="news-item__author-name">Денис Иванов</span>
           <time class="news-item__author-date" datetime="2022-06-10">10.06.2022</time>
         </div>
-        <button class="news-item__retweet-button"></button>
+        <button class="news-item__retweet-button">
+          <span class="visually-hidden">Ретвит</span>
+        </button>
       </div>
     </li>
     <li class="news__item news-item news-item">
@@ -306,16 +316,18 @@
         председателем совета федерации яхтинга Михаилом Сергеевичем ...
       </p>
       <figure>
-        <img class="news-item__image" src="" width="370" height="130" alt="Девушка стоит у руля яхты">
+        <img class="news-item__image" src="img/news/news-4.jpg" width="370" height="130" alt="Девушка стоит у руля яхты">
         <figcaption class="news-item__image-desc">Участник регаты 2022 Иван Семенов</figcaption>
       </figure>
       <div class="news-item__author">
         <div class="news-item__author-wrapper">
-          <img class="news-item__author-avatar" width="37" height="37" alt="Аватар автора">
+          <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
           <span class="news-item__author-name">Денис Иванов</span>
           <time class="news-item__author-date" datetime="2022-06-05">05.06.2022</time>
         </div>
-        <button class="news-item__retweet-button"></button>
+        <button class="news-item__retweet-button">
+          <span class="visually-hidden">Ретвит</span>
+        </button>
       </div>
     </li>
     <li class="news__item news-item news-item">
@@ -325,23 +337,25 @@
         совершенные технологии представлены ...
       </p>
       <figure>
-        <img class="news-item__image" src="" width="370" height="130" alt="Девушка стоит у руля яхты">
+        <img class="news-item__image" src="img/news/news-5.jpg" width="370" height="130" alt="Девушка стоит у руля яхты">
         <figcaption class="news-item__image-desc">Выставка Sail Boat Europe 2022</figcaption>
       </figure>
       <div class="news-item__author">
         <div class="news-item__author-wrapper">
-          <img class="news-item__author-avatar" width="37" height="37" alt="Аватар автора">
+          <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
           <span class="news-item__author-name">Денис Иванов</span>
           <time class="news-item__author-date" datetime="2022-06-01">01.06.2022</time>
         </div>
-        <button class="news-item__retweet-button"></button>
+        <button class="news-item__retweet-button">
+          <span class="visually-hidden">Ретвит</span>
+        </button>
       </div>
     </li>
   </section>
   <footer class="footer">
     <div class="footer__copyright">
       <a class="footer__logo" href="#">
-        <img width="100" height="106" alt="Логотип">
+        <img src="img/logotype.svg" width="100" height="106" alt="Логотип">
       </a>
       <p class="footer__copyright-text">
         <a class="footer__copyright-link" href="#">Политика конфиденциальности</a><br>

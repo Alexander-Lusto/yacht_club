@@ -11,7 +11,7 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="">
-        <img class="logo__image" width="64" height="68" alt="Логотип">
+        <img class="logo__image" src="img/logotype.svg" width="64" height="68" alt="Логотип">
       </a>
       <nav class="main-header__navigation navigation">
         <ul class="navigation__list">
@@ -51,7 +51,7 @@
         <ul class="user-navigation__list">
           <li class="user-navigation__item">
             <a class="user-navigation__link" href="#">
-              <img class="user-navigation__img" width="36" height="36" alt="Войти">
+              <img class="user-navigation__img" src="img/account.svg" width="36" height="36" alt="Войти">
             </a>
           </li>
         </ul>
@@ -68,24 +68,34 @@
       <div class="promo__slider slider">
         <ul class="slider__list">
           <li class="slider__item">
-            <img class="slider__image" width="1070" height="426" alt="Яхта на фоне гор">
+            <img class="slider__image" src="img/main photo 1.jpg" width="1070" height="426" alt="Яхта на фоне гор">
             <a class="slider__link" href="#">
               смотреть далее
             </a>
           </li>
         </ul>
         <div class="slider__controls">
-          <button class="slider__control slider__control--right" aria-label="Левый слайд"></button>
-          <button class="slider__control slider__control--left" aria-label="Правый слайд"></button>
+          <button class="slider__control slider__control--right" aria-label="Левый слайд" disabled>
+            <span class="visually-hidden">Левый слайд</span>
+          </button>
+          <button class="slider__control slider__control--left" aria-label="Правый слайд">
+            <span class="visually-hidden">Правый слайд</span>
+          </button>
         </div>
       </div>
       <nav class="promo__navigation">
-        <a class="promo__navigation-link" href="#">
-          членство
-        </a>
-        <a class="promo__navigation-link" href="#">
-          прогулки
-        </a>
+        <ul class="promo__navigation-list">
+          <li class="promo__navigation-item">
+            <a class="promo__navigation-link" href="#">
+              членство
+            </a>
+          </li>
+          <li class="promo__navigation-item">
+            <a class="promo__navigation-link" href="#">
+              прогулки
+            </a>
+          </li>
+        </ul>
       </nav>
     </section>
     <section class="events">
@@ -103,7 +113,7 @@
           </p>
         </div>
         <a class="event__link" href="#"></a>
-        <img class="event__image" width="600" height="262" alt="Мужчина сидит на носу яхты и смотрит в бинокль.">
+        <img class="event__image" src="img/man.jpg" width="600" height="262" alt="Мужчина сидит на носу яхты и смотрит в бинокль.">
       </div>
       <div class="events__item event event--right">
         <div class="event__info">
@@ -118,7 +128,7 @@
           </p>
         </div>
         <a class="event__link event__link--right" href="#"></a>
-        <img class="event__image" width="500" height="252" alt="Дети сидят на кожанном кресле яхты и пьют сок.">
+        <img class="event__image" src="img/children.png" width="500" height="252" alt="Дети сидят на кожанном кресле яхты и пьют сок.">
       </div>
     </section>
     <section class="catalog">
@@ -127,7 +137,7 @@
         <li class="catalog__item">
           <a class="catalog__link card" href="#">
             <h3 class="card__title">Катер Meridian 401</h3>
-            <img class="card__image" width="310" height="141" alt="Фотография яхты">
+            <img class="card__image" src="img/1.jpg" width="310" height="141" alt="Фотография яхты">
             <p class="card__desc">
               Яхта 401 длиной 12.5 метров и шириной 4.2 метра, вместимостью 11 человек
             </p>
@@ -147,7 +157,7 @@
         <li class="catalog__item">
           <a class="catalog__link card" href="#">
             <h3 class="card__title">Катер 60 Manhattan</h3>
-            <img class="card__image" width="310" height="141" alt="Фотография яхты">
+            <img class="card__image" src="img/2.jpg" width="310" height="141" alt="Фотография яхты">
             <p class="card__desc">
               Яхта 401 длиной 12.5 метров и шириной 4.2 метра, вместимостью 11 человек
             </p>
@@ -167,7 +177,7 @@
         <li class="catalog__item">
           <a class="catalog__link card" href="#">
             <h3 class="card__title">Катер Starfisher 34</h3>
-            <img class="card__image" width="310" height="141" alt="Фотография яхты">
+            <img class="card__image" src="img/3.jpg" width="310" height="141" alt="Фотография яхты">
             <p class="card__desc">
               Моторная яхта длиной 11 метров и вместимостью до 8 человек
             </p>
@@ -198,28 +208,28 @@
       <div class="services__info">
         <h3 class="services__title title">Кают-компания</h3>
         <p class="services__desc">Наш клуб является партнером одного из лучших 5-звездочных отелей города,Hyatt Regency. Мы обеспечиваем лучшее обслуживание и сервис,  чтобы сделать ваш отдых идеальным. </p>
-        <img class="services__image" width="430" height="177" alt="Фотография завтрака на яхте">
+        <img class="services__image" src="img/table.jpg" width="430" height="177" alt="Фотография завтрака на яхте">
       </div>
       <ul class="services__features">
         <li class="services__feature feature">
           <h4 class="feature__name">Изысканная кухня</h4>
           <p class="feature__desc">Блюда средиземноморской кухни от лучших поваров</p>
-          <span class="feature__icon"></span>
+          <span class="feature__icon feature__icon--cuisin"></span>
         </li>
         <li class="services__feature feature">
           <h4 class="feature__name">Фирменные напитки</h4>
           <p class="feature__desc">Огромный выбор вкуснейших освежающих коктейлей </p>
-          <span class="feature__icon"></span>
+          <span class="feature__icon feature__icon--drinks"></span>
         </li>
         <li class="services__feature feature">
           <h4 class="feature__name">Полный комфорт</h4>
           <p class="feature__desc">Большие ортопедические двуспальные кровати</p>
-          <span class="feature__icon"></span>
+          <span class="feature__icon feature__icon--comfort"></span>
         </li>
         <li class="services__feature feature">
           <h4 class="feature__name">Помощь во всем</h4>
           <p class="feature__desc">Выполним любую просьбу и сделаем все, что захотите</p>
-          <span class="feature__icon"></span>
+          <span class="feature__icon feature__icon--help"></span>
         </li>
       </ul>
     </section>
@@ -231,48 +241,54 @@
             <h3 class="news-item__headline">Итоги регаты Sochi Race Week 2022</h3>
             <p class="news-item__text">Свыше сотни участников собирались на побережье Сочи, чтобы посоревноваться за главный приз. В соревнованиях приняли участие как новички, так и моряки, имеющие за плечами немалый опыт.</p>
             <figure>
-              <img class="news-item__image" src="" width="770" height="378" alt="Человек в форме стоит на яхте и смотрит в небо">
+              <img class="news-item__image" src="img/news/news-1.jpg" width="770" height="378" alt="Человек в форме стоит на яхте и смотрит в небо">
               <figcaption class="news-item__image-desc"> Победитель регаты шкипер Иван Кулешов</figcaption>
             </figure>
             <div class="news-item__author">
               <div class="news-item__author-wrapper">
-                <img class="news-item__author-avatar" width="60" height="60" alt="Аватар автора">
+                <img class="news-item__author-avatar" src="img/author-photo-1.jpg" width="60" height="60" alt="Аватар автора">
                 <span class="news-item__author-name">Артем Колесников</span>
                 <time class="news-item__author-date" datetime="2022-06-20">22.06.2022</time>
               </div>
-              <button class="news-item__retweet-button"></button>
+              <button class="news-item__retweet-button">
+                <span class="visually-hidden">Ретвит</span>
+              </button>
             </div>
           </li>
           <li class="news__item news-item news-item">
             <h3 class="news-item__headline">Выставка Sochi Boat Show</h3>
             <p class="news-item__text">Выставка катеров и яхт Sochi Boat Show состоится с 19 по 29 июля 2023 года в нашем яхт-клубе. В программе будет  ...</p>
             <figure>
-              <img class="news-item__image" src="" width="370" height="130" alt="Фотография яхты на причале">
+              <img class="news-item__image" src="img/news/news-2.jpg" width="370" height="130" alt="Фотография яхты на причале">
               <figcaption class="news-item__image-desc">Участник выставки – яхта Golsling 3.15</figcaption>
             </figure>
             <div class="news-item__author">
               <div class="news-item__author-wrapper">
-                <img class="news-item__author-avatar" width="37" height="37" alt="Аватар автора">
+                <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
                 <span class="news-item__author-name">Денис Иванов</span>
                 <time class="news-item__author-date" datetime="2022-06-15">15.06.2022</time>
               </div>
-              <button class="news-item__retweet-button"></button>
+              <button class="news-item__retweet-button">
+                <span class="visually-hidden">Ретвит</span>
+              </button>
             </div>
           </li>
           <li class="news__item news-item news-item">
             <h3 class="news-item__headline">Регате быть!</h3>
             <p class="news-item__text">Из-за карантина весенние регаты отменили, но мы надеялись, что  летние соревнования состоятся. С радостью сообщаем, что летняя ...</p>
             <figure>
-              <img class="news-item__image" src="" width="370" height="130" alt="Девушка стоит у руля яхты">
+              <img class="news-item__image" src="img/news/news-3.jpg" width="370" height="130" alt="Девушка стоит у руля яхты">
               <figcaption class="news-item__image-desc">Участница регаты 2020 Ирина Петрова</figcaption>
             </figure>
             <div class="news-item__author">
               <div class="news-item__author-wrapper">
-                <img class="news-item__author-avatar" width="37" height="37" alt="Аватар автора">
+                <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
                 <span class="news-item__author-name">Денис Иванов</span>
                 <time class="news-item__author-date" datetime="2022-06-10">10.06.2022</time>
               </div>
-              <button class="news-item__retweet-button"></button>
+              <button class="news-item__retweet-button">
+                <span class="visually-hidden">Ретвит</span>
+              </button>
             </div>
           </li>
         </ul>
@@ -349,15 +365,15 @@
           </label>
 
           <div class="form__agreement">
-            <label class="form__agreement-text">Я даю согласие на обработку персональных данных</label>
-            <input class="form__agreement-checkbox" type="checkbox" name="agreement">
+            <label for="agreement" class="form__agreement-text">Я даю согласие на обработку персональных данных</label>
+            <input id="agreement" class="form__agreement-checkbox" type="checkbox" name="agreement">
           </div>
 
-          <button class="form__submit" type="submit">Отправить</button>
+          <p class="form__button-wrapper"><button class="form__submit" type="submit">Отправить</button></p>
         </form>
       </div>
       <div class="form__picture">
-        <img src="" width="600" height="567" alt="Яхты стоят в порту">
+        <img src="img/form.jpg" width="600" height="567" alt="Яхты стоят в порту">
       </div>
     </section>
     <section class="contacts">
@@ -379,13 +395,19 @@
           <b>Мы в социальных сетях:</b>
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link socials__link--facebook" href="#" aria-label="Фейсбук"></a>
+              <a class="socials__link socials__link--facebook" href="#" aria-label="Фейсбук">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--twitter" href="#" aria-label="Твиттер"></a>
+              <a class="socials__link socials__link--twitter" href="#" aria-label="Твиттер">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--insta" href="#" aria-label="Инстаграмм"></a>
+              <a class="socials__link socials__link--insta" href="#" aria-label="Инстаграмм">
+                <span class="visually-hidden">Инстаграмм</span>
+              </a>
             </li>
           </ul>
         </p>
@@ -397,7 +419,7 @@
   <footer class="footer">
     <div class="footer__copyright">
       <a class="footer__logo" href="#">
-        <img width="100" height="106" alt="Логотип">
+        <img src="img/logotype.svg" width="100" height="106" alt="Логотип">
       </a>
       <p class="footer__copyright-text">
         <a class="footer__copyright-link" href="#">Политика конфиденциальности</a><br>
