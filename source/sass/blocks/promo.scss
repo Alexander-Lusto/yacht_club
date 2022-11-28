@@ -1,0 +1,168 @@
+.promo {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo__title {
+  flex-grow: 1;
+  position: relative;
+  z-index: 2;
+
+  font-style: italic;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 60px;
+
+  margin: 0;
+  margin-left: 100px;
+}
+
+.promo__title-text {
+  display: inline-block;
+  margin-bottom: 17px;
+}
+
+.promo__title-text--light {
+  color: $color-light;
+}
+
+.promo__slider {
+  z-index: 1;
+  margin-top: -85px;
+}
+
+.promo__navigation {
+  position: relative;
+}
+
+.promo__navigation-list {
+  position: absolute;
+  left: -2px;
+  top: 82px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  transform: rotate(90deg);
+}
+
+.promo__navigation-item {
+  list-style: none;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+}
+
+.promo__navigation-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+  width: 1070px;
+  height: 426px;
+  padding-left: 100px;
+
+  background-image: url("../../img/slide_1.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.slider__controls-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__control {
+  width: 98px;
+  height: 76px;
+  background-color: $color-light;
+  background-repeat: no-repeat;
+  border: none;
+  background-position: center;
+
+  cursor: pointer;
+
+  &--left {
+    background-image: url("../../img/arrow_left_slider.svg");
+    margin-right: -5px;
+  }
+
+  &--right {
+    background-image: url("../../img/arrow_right_slider.svg");
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.slider__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-light;
+
+  cursor: pointer;
+  margin-bottom: 12px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid $color-light;
+    background-image: url("../../img/arrow_down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

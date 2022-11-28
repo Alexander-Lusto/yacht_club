@@ -1,0 +1,57 @@
+.calendar__title {
+  margin-bottom: 34px;
+
+  &::after {
+    width: 370px;
+  }
+}
+
+.calendar__table {
+  width: 100%;
+  border-collapse: collapse;
+
+
+  th {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-dark;
+  }
+
+  tr {
+    height: 57px;
+  }
+
+  tr:nth-child(2n) {
+    background-color: #F5F5F7;
+    ;
+  }
+
+  td {
+    border: none;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-color-black;
+  }
+
+  td:nth-child(1) {
+    width: 263px;
+  }
+
+  td:nth-child(2) {
+    width: 210px;
+  }
+
+  td:nth-child(3) {
+    width: 253px;
+  }
+
+  td:nth-child(4) {
+    width: 165px;
+  }
+
+}
