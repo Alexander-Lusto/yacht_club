@@ -1,0 +1,98 @@
+.services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 70px;
+}
+
+.services__info {
+  width: 430px;
+}
+
+.services__title {
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+
+.services__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-dark;
+}
+
+.services__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 46px;
+  grid-column-gap: 30px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; */
+
+  width: 570px;
+  margin: 0;
+  padding: 0;
+}
+
+.services__feature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  list-style: none;
+  width: 244px;
+}
+
+.feature__name {
+  order: 2;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: $color-dark;
+
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.feature__desc {
+  order: 3;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color-black;
+
+  margin: 0;
+}
+
+.feature__icon {
+  order: 1;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid $color-green;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-bottom: 18px;
+
+  &--cuisin {
+    background-image: url("../../img/features/food.svg");
+  }
+
+  &--drinks {
+    background-image: url("../../img/features/drinks.svg");
+  }
+
+  &--comfort {
+    background-image: url("../../img/features/comfort.svg");
+  }
+
+  &--help {
+    background-image: url("../../img/features/help.svg");
+  }
+}

@@ -1,0 +1,26 @@
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+
+  margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    left: 0;
+    height: 2px;
+    width: 130px;
+    background-color: $color-green;
+    margin-top: 13px;
+  }
+
+  &--center {
+    text-align: center;
+
+    &::after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
