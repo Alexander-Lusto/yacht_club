@@ -1,0 +1,18 @@
+.user-navigation__list {
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation__item {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.user-navigation__link {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}

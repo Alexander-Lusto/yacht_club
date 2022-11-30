@@ -71,8 +71,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  flex-wrap: wrap;
-  column-gap: 141px;
+}
+
+.footer__navigation:not(:last-child) {
+  margin-right: 141px;
 }
 
 .footer__navigation-list {
@@ -103,7 +105,6 @@
   font-size: 14px;
   line-height: 19px;
   color: $text-color-black;
-  white-space: nowrap;
 
   &:hover {
     opacity: 0.8;

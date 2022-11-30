@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Яхт-клуб «Под парусом»</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -144,7 +145,7 @@
       <h2 class="catalog__title title title--center">Аренда яхты</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <a class="catalog__link card" href="#">
+          <article class="catalog__card card">
             <h3 class="card__title">Катер Meridian 401</h3>
             <img class="card__image" src="img/3.jpg" width="310" height="141" alt="Фотография яхты">
             <p class="card__desc">
@@ -162,10 +163,10 @@
               <span class="card__price-text">Цена:</span>
               <span class="card__price-amount">14 000 ₽/час</span>
             </p>
-          </a>
+          </article>
         </li>
         <li class="catalog__item">
-          <a class="catalog__link card" href="#">
+          <article class="catalog__card card" href="#">
             <h3 class="card__title">Катер 60 Manhattan</h3>
             <img class="card__image" src="img/2.jpg" width="310" height="141" alt="Фотография яхты">
             <p class="card__desc">
@@ -182,10 +183,10 @@
               <span class="card__price-text">Цена:</span>
               <span class="card__price-amount">25 000 ₽/час</span>
             </p>
-          </a>
+          </article>
         </li>
         <li class="catalog__item">
-          <a class="catalog__link card" href="#">
+          <article class="catalog__card card" href="#">
             <h3 class="card__title">Катер Starfisher 34</h3>
             <img class="card__image" src="img/1.jpg" width="310" height="141" alt="Фотография яхты">
             <p class="card__desc">
@@ -203,7 +204,7 @@
               <span class="card__price-text">Цена:</span>
               <span class="card__price-amount">18 000 ₽/час</span>
             </p>
-          </a>
+          </article>
         </li>
       </ul>
     </section>
@@ -211,11 +212,11 @@
       <h2 class="visually-hidden">Галерея</h2>
       <h3 class="gallery__title title title--center">Почувствуйте атмосферу</h3>
       <div class="gallery__content">
-        <div class="gallery__video">
-          <button class="gallery__play-button">
-            <span class="visually-hidden">Воспроизвести</span>
-          </button>
-        </div>
+        <video class="gallery__video" poster="img/gallery/gallery_1.jpg" width="630" height="360">
+        </video>
+        <button class="gallery__play-button">
+          <span class="visually-hidden">Воспроизвести</span>
+        </button>
       </div>
     </section>
     <section class="services page__services">
@@ -291,8 +292,10 @@
               </a>
             </h3>
             <p class="news-item__text">
-              Выставка катеров и яхт Sochi Boat Show состоится с 19 по 29 июля 2023 года <br>
-              в нашем яхт-клубе. В программе будет ...</p>
+              Выставка катеров и яхт Sochi Boat Show <br>
+              состоится с 19 по 29 июля 2020 года <br>
+              в нашем яхт-клубе. В программе будет демонстрация и тест-драйвы водомоторной техники, яркое шоу и спортивная регата.
+            </p>
             <figure class="news-item__image-wrapper">
               <img class="news-item__image" src="img/news/news-2.jpg" width="370" height="130"
                 alt="Фотография яхты на причале">
@@ -316,8 +319,11 @@
                 Регате быть!
               </a>
             </h3>
-            <p class="news-item__text">Из-за карантина весенние регаты отменили, но мы надеялись, что летние
-              соревнования состоятся. С радостью сообщаем, что летняя ...</p>
+            <p class="news-item__text">
+              Из-за карантина весенние регаты отменили, <br>
+              но мы надеялись, что летние соревнования <br>
+              состоятся. С радостью сообщаем, что летняя регата Sochi Summer Race состоится в августе!
+            </p>
             <figure class="news-item__image-wrapper">
               <img class="news-item__image" src="img/news/news-3.jpg" width="370" height="130"
                 alt="Девушка стоит у руля яхты">
@@ -442,23 +448,23 @@
         </p>
         <p class="contacts__desc socials">
           <b>Мы в социальных сетях:</b>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="#" aria-label="Фейсбук">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="#" aria-label="Твиттер">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--instagram" href="#" aria-label="Инстаграмм">
-              <span class="visually-hidden">Инстаграмм</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="#" aria-label="Фейсбук">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--twitter" href="#" aria-label="Твиттер">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--instagram" href="#" aria-label="Инстаграмм">
+                <span class="visually-hidden">Инстаграмм</span>
+              </a>
+            </li>
+          </ul>
         </p>
       </div>
       <div class="contacts__map">
@@ -468,7 +474,7 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__copyright">
-        <a class="footer__logo" href="#">
+        <a class="footer__logo" href="index.html">
           <img class="footer__logo-image" src="img/logotype.svg" width="100" height="106" alt="Логотип">
         </a>
         <p class="footer__copyright-text">
