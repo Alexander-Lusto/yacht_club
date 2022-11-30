@@ -1,0 +1,51 @@
+.blockquote {
+  position: relative;
+  box-sizing: border-box;
+  width: 1028px;
+  padding: 60px 130px;
+  background-color: #F5F5FA;
+
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #283C54;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 40px;
+    width: 56px;
+    height: 52px;
+    background: url("../../img/qoute_icon.svg") center no-repeat;
+  }
+}
+
+.blockquote__author {
+  display: block;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #283C54;
+
+  margin-top: 22px;
+}
+
+.blockquote__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #009A93;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

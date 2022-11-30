@@ -24,6 +24,14 @@
   width: 100px;
   height: 106px;
   margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .footer__logo-image {
