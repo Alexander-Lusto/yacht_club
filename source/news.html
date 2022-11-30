@@ -4,13 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Яхт-клуб «Под парусом»: Новости</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="page__body body">
-  <header class="header">
+
+  <header class="page__header header">
     <div class="header__wrapper">
-      <a class="header__logo logo" href="">
+      <a class="header__logo logo" href="index.html">
         <img class="logo__image" src="img/logotype.svg" width="64" height="68" alt="Логотип">
       </a>
       <nav class="header__navigation navigation">
@@ -57,29 +62,31 @@
         </ul>
       </nav>
     </div>
-    <div class="header__breadcrumbs breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">
-            Главная
-          </a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">
-            Новости
-          </a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item--current">
-          <a class="breadcrumbs__link" href="">
-            Открытие школы яхтинга “BigRace”
-          </a>
-        </li>
-      </ul>
-    </div>
   </header>
+
+  <section class="page__breadcrumbs breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Новости
+        </a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--current">
+        <a class="breadcrumbs__link">
+          Открытие школы яхтинга “BigRace”
+        </a>
+      </li>
+    </ul>
+  </section>
+
   <main class="page__main article">
     <section class="article__preview">
-      <div class="article__column">
+      <div class="article__column-preview article__column-preview--left">
         <h1 class="article__title">Открытие школы яхтинга “BigRace” в Калининграде</h1>
         <time class="article__date" datetime="2021-01-30">30 января 2021</time>
         <p class="article__contributors">
@@ -90,44 +97,63 @@
             <b>Фотограф:</b> Леонид Яровой
           </span>
         </p>
+        <p class="article__preview-text">
+          Профессиональное сообщество яхтсменов празднует открытие крупнейшей школы яхтинга в Калининграде.
+        </p>
+        <p class="article__preview-text">
+          Кто в ней преподает, чему там можно научиться и на кого она рассчитана? Обо всем этом нам рассказал Михаил
+          Чернов, известный спортсмен и владелец компании BigRace.
+        </p>
       </div>
 
-      <div class="article__column">
-        <img class="article__preview-photo" src="img/article/article-1.jpg" width="600" height="363" alt="Двое мужчин плывут на яхте">
+      <div class="article__column-preview">
+        <img class="article__preview-photo" src="img/article/article-1.jpg" width="600" height="363"
+          alt="Двое мужчин плывут на яхте">
       </div>
     </section>
 
     <section class="article__content article__content--left">
       <p class="article__text">
-        Надо ли напоминать, что Михаил – лауреат премии «Яхтсмен века», победитель
-        открытого чемпионата Испании по океанским гонкам, держатель рекорда
-        пересечения Атлантики «в четыре руки» на яхте Class 20. Исходя из всех заслуг спортсмена, можно смело заявить,
-        что он настоящий профессионал своего дела. Ученикам его школы, как новичкам, так и бывалым яхтсменам, однозначно
-        повезло. В школе Михаила будет преподавать он сам, а также лучшие спортсмены России и других стран: Испании,
-        Франции, Черногории и др.
+        <span class="article__first-letter">Н</span>
+        адо ли напоминать, что Михаил – лауреат премии «Яхтсмен века», победитель <br>
+        открытого чемпионата Испании по океанским гонкам, держатель рекорда <br>
+        пересечения Атлантики «в четыре руки» на яхте Class 20. Исходя из всех заслуг <br>
+        спортсмена, можно смело заявить, что он настоящий профессионал своего дела.<br>
+        Ученикам его школы, как новичкам, так и бывалым яхтсменам, однозначно повезло.<br>
+        В школе Михаила будет преподавать он сам, а также лучшие спортсмены России<br>
+        и других стран: Испании, Франции, Черногории и др.
       </p>
-      <p class="article__text">Михаил поставил цель создать не просто школу, а что-то большее:</p>
-      <q class="article__quote">
-        «Я хотел, чтобы каждый ученик школы чувствовал себя частью большой и сильной команды. Это не просто слова, мы
-        проделали огромную работу, чтобы это стало возможным: проводим специальные мероприятия, тренинги, собрания и
-        многое другое.»
-      </q>
-      <p class="article__text">
+      <p class="article__text article__text--margin10">
+        Михаил поставил цель создать не просто школу, а что-то большее:
+      </p>
+      <p class="article__text article__text--quote">
+        <q>
+          Я хотел, чтобы каждый ученик школы чувствовал себя <br>
+          частью большой и сильной команды. Это не просто слова, <br>
+          мы проделали огромную работу, чтобы это стало возможным: <br>
+          проводим специальные мероприятия, тренинги, собрания <br>
+          и многое другое.
+        </q>
+      </p>
+      <p class="article__text article__text--question">
         <i>– Михаил, расскажите, чем ваша школа отличается от других школ яхтинга в России?</i>
       </p>
-      <p class="article__text">
-        – Во-первых, это крупнейшая школа в Калининграде и одна из самых крупных в России. Школа оборудована самым
-        современным и разнообразным оборудованием. А еще, у нас будут преподавать не только самые опытные яхтсмены
-        России, но и спортсмены из других стран. Школа рассчитана не только на новичков, опытные яхтсмены тоже найдут
-        здесь для себя много полезного, смогут повысить квалификацию.
+      <p class="article__text article__text--margin15">
+        – Во-первых, это крупнейшая школа в Калининграде и одна из самых крупных в России. <br>
+        Школа оборудована самым современным и разнообразным оборудованием. А еще, <br>
+        у нас будут преподавать не только самые опытные яхтсмены России, но и спортсмены <br>
+        из других стран. <mark class="article__text-highlight">Школа рассчитана не только на новичков, опытные яхтсмены
+          тоже<br>
+          найдут здесь для себя много полезного,</mark> смогут повысить квалификацию.
       </p>
-      <p class="article__text">
+      <p class="article__text article__text--question">
         <i>– Как пришла идея открыть свою школу?</i>
       </p>
       <p class="article__text">
         – Ко мне обращались любители парусного спорта, интересовались, где можно продолжить обучение, тренироваться,
         найти единомышленников. Я мог посоветовать лишь пару школ, и то в Сочи или Москве, в нашем городе такой не было.
-        Мы объединились с Николаем Петровым, победителем Sochi Race Week 2019, и создали свою школу, которая отвечает
+        Мы объединились с Николаем Петровым, победителем <a class="article__text-link" href="#">Sochi Race Week
+          2019</a>, и создали свою школу, которая отвечает
         всем потребностям новичков и профессионалов.
       </p>
     </section>
@@ -136,7 +162,7 @@
       <ul class="sideblock__list">
         <li class="sideblock__item">
           <a class="sideblock__link" href="#">
-            Премия “Яхстмен года 2021”
+            Премия “Яхстмен <br> года 2021”
           </a>
         </li>
         <li class="sideblock__item">
@@ -147,60 +173,69 @@
       </ul>
     </aside>
 
-    <section class="article__content">
-      <figure>
-        <img class="article__content-photo" src="img/article/article-2.jpg" width="1170" height="530" alt="Двое мужчин управляют яхтой">
-        <figcaption class="article__content-photo-desc"> Михаил Чернов и Николай Петров</figcaption>
+    <section class="article__content article__two-cloumns">
+      <figure class="article__photo-wrapper">
+        <img class="article__photo" src="img/article/article-2.jpg" width="1170" height="530"
+          alt="Двое мужчин управляют яхтой">
+        <figcaption class="article__photo-desc">Михаил Чернов и Николай Петров</figcaption>
       </figure>
       <div class="article__column">
-        <p class="article__text">
-          <i>– Как пришла идея открыть свою школу?</i>
+        <p class="article__text article__text--question">
+          <i>– Расскажите, пожалуйста, подробнее о преподавателях</i>
         </p>
         <p class="article__text">
-          – Одним из преподавателей буду я. В основном, я буду проводить отдельные мастер-классы для опытных моряков, но
-          иногда буду проводить занятия и у начальных групп. Ведущим преподавателем начальных групп будет Никита Гуляев,
-          очень опытный спортсмен, лауреат премии «Яхтсмен года 2020». Из приглашенных тренеров у нас Уильям Джонсон,
-          Рэй Гилберт и Сэм Ли. Но, конечно, мы планируем как можно чаще приглашать и других яхтсменов.
+          – Одним из преподавателей буду я. В основном, я буду проводить <br>
+          отдельные мастер-классы для опытных моряков, но иногда буду <br>
+          проводить занятия и у начальных групп. Ведущим преподавателем <br>
+          начальных групп будет Никита Гуляев, очень опытный спортсмен,<br>
+          лауреат премии «Яхтсмен года 2020». Из приглашенных тренеров <br>
+          у нас Уильям Джонсон, Рэй Гилберт и Сэм Ли. Но, конечно, мы<br>
+          планируем как можно чаще приглашать и других яхтсменов.
         </p>
       </div>
       <div class="article__column">
-        <p class="article__text">
+        <p class="article__text article__text--question">
           <i>– Планируете ли вы какие-либо регаты уже в этом году?</i>
         </p>
         <p class="article__text">
-          – Да, конечно! По вторникам проводим традиционный общий мастер-класс, в среду гонку среди любителей, четверги
-          посвящаем матч-рейсу. В пятницу даем передышку, а в субботу ждем начинающих яхтсменов на совмещенное занятие –
-          теория плюс практика на воде. По воскресеньям мы будем проводить Royal Sunday Race. Гонка стартует в четыре
-          часа дня, чтобы люди могли отдохнуть, пообщаться и зарядиться энергией на всю оставшуюся неделю.
+          – Да, конечно! По вторникам проводим традиционный общий <br>
+          мастер-класс, в среду гонку среди любителей, четверги посвящаем <br>
+          матч-рейсу. В пятницу даем передышку, а в субботу ждем начинающих <br>
+          яхтсменов на совмещенное занятие – теория плюс практика на воде. <br>
+          По воскресеньям мы будем проводить Royal Sunday Race. Гонка <br>
+          стартует в четыре часа дня, чтобы люди могли отдохнуть, пообщаться <br>
+          и зарядиться энергией на всю оставшуюся неделю.
         </p>
       </div>
-      <blockquote class="article__quote--large">
-        Ставить себе цели, двигаться к ним шаг за шагом, стремиться
-        к знаниям. Самое важное – постоянно набираться опыта
-        и знаний. И обязательно верить в себя!
-        <cite class="article__quote-author">
+      <blockquote class="article__blockquote blockquote">
+        Ставить себе цели, двигаться к ним шаг за шагом, стремиться <br>
+        к знаниям. Самое важное – постоянно набираться опыта <br>
+        и знаний. И обязательно верить в себя! <br>
+        <cite class="blockquote__author">
           совет всем любителям яхтинга от
-          <a class="article__quote-link" href="#">Коллина Трейси</a>
+          <a class="blockquote__link" href="#">Коллина Трейси</a>
         </cite>
       </blockquote>
     </section>
 
-    <section class="article__content article__content--left">
-      <p class="article__text">
+    <section class="article__content article__content--left article__content--last">
+      <p class="article__text article__text--question">
         <i>– Есть ли у вас в спорте пример для подражания?</i>
       </p>
-      <p class="article__text">
-        – Мне очень нравятся истории простых людей, которые смогли добиться успеха
-        и признания. Особенно тех, кто не был рожден в спортивной или богатой семье,
-        не имел возможности тренироваться на высоком уровне в детстве, кто сам создал себя. Коллин Трейси – мой кумир. С
-        него и началась моя любовь к яхтингу. Однажды, мне даже довелось увидеться с ним лично. Тогда он дал мне совет и
-        его слова я запомнил на всю жизнь. Это мой девиз, который теперь и я передаю своим ученикам.
+      <p class="article__text article__text--margin15">
+        – Мне очень нравятся истории простых людей, которые смогли добиться успеха <br>
+        и признания. Особенно тех, кто не был рожден в спортивной или богатой семье, <br>
+        не имел возможности тренироваться на высоком уровне в детстве, кто сам создал себя. <br>
+        Коллин Трейси – мой кумир. С него и началась моя любовь к яхтингу. Однажды, мне <br>
+        даже довелось увидеться с ним лично. Тогда он дал мне совет и его слова я запомнил <br>
+        на всю жизнь. Это мой девиз, который теперь и я передаю своим ученикам.
       </p>
-      <p class="article__text">
+      <p class="article__text article__text--question">
         <i>– Расскажите о яхтах вашей школы</i>
       </p>
-      <p class="article__text">
+      <p class="article__text article__text--margin5">
         – В нашем флоте более 40 современных моделей яхт, таких как:
+      </p>
       <ul class="article__list">
         <li class="article__item">Bavaria 47</li>
         <li class="article__item">Bavaria 50</li>
@@ -210,19 +245,23 @@
         <li class="article__item">Jeanneau SO 35</li>
         <li class="article__item">Jeanneau SO 36</li>
       </ul>
-      </p>
-      <p class="article__text">
-        <i>– Видно, что вы отлично подготовились! Желаем успеха и дальнейшего развития вашей школе!</i>
+
+      <p class="article__text article__text--question">
+        <i>
+          – Видно, что вы отлично подготовились! Желаем успеха <br>
+          и дальнейшего развития вашей школе!
+        </i>
       </p>
       <p class="article__text">
         – Спасибо! Приходите к нам на обучение и мероприятия. Будем всех вас очень ждать!
       </p>
     </section>
-    <aside class="article__sideblock sideblock">
+    <aside class="article__sideblock sideblock article__sideblock--second">
       <ul class="sideblock__list">
         <li class="sideblock__item">
           <a class="sideblock__link" href="#">
-            Коллин Трейси – легенда яхтинга
+            Коллин Трейси – <br>
+            легенда яхтинга
           </a>
         </li>
       </ul>
@@ -249,271 +288,279 @@
     </section>
 
     <section class="article__socials socials">
+      <span class="socials__text">Поделиться статьей:</span>
       <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link socials__link--facebook" href="#" aria-label="Фейсбук">
+        <li class="socials__item socials__item--small">
+          <a class="socials__link socials__link--facebook socials__link--small" href="#" aria-label="Фейсбук">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--twitter" href="#" aria-label="Твиттер">
+        <li class="socials__item socials__item--small">
+          <a class="socials__link socials__link--twitter socials__link--small" href="#" aria-label="Твиттер">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--insta" href="#" aria-label="Инстаграмм">
+        <li class="socials__item socials__item--small">
+          <a class="socials__link socials__link--instagram socials__link--small" href="#" aria-label="Инстаграмм">
             <span class="visually-hidden">Инстаграмм</span>
           </a>
         </li>
       </ul>
     </section>
   </main>
-  <section class="news">
-    <li class="news__item news-item news-item">
-      <h3 class="news-item__headline">Выставка Sochi Boat Show</h3>
-      <p class="news-item__text">Выставка катеров и яхт Sochi Boat Show состоится с 19 по 29 июля 2023 года в нашем
-        яхт-клубе. В программе будет ...</p>
-      <figure>
-        <img class="news-item__image" src="img/news/news-2.jpg" width="370" height="130" alt="Фотография яхты на причале">
-        <figcaption class="news-item__image-desc">Участник выставки – яхта Golsling 3.15</figcaption>
-      </figure>
-      <div class="news-item__author">
-        <div class="news-item__author-wrapper">
-          <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
-          <span class="news-item__author-name">Денис Иванов</span>
-          <time class="news-item__author-date" datetime="2022-06-15">15.06.2022</time>
+
+  <section class="news page__news">
+    <h2 class="news__title title news__title--article">Другие новости</h2>
+    <ul class="news__list news__list--article">
+      <li class="news__item news-item news-item--medium news-item--small">
+        <h3 class="news-item__headline">
+          <a class="news-item__link" href="#">
+            Выставка Sochi Boat Show
+          </a>
+        </h3>
+        <p class="news-item__text">
+          Выставка катеров и яхт Sochi Boat Show состоится с 19 по 29 июля 2020 года в нашем яхт-клубе. В программе
+          будет демонстрация и тест-драйвы водомоторной ...
+        </p>
+        <figure class="news-item__image-wrapper">
+          <img class="news-item__image" src="img/news/news-2.jpg" width="370" height="130"
+            alt="Фотография яхты на причале">
+          <figcaption class="news-item__image-desc">Участник выставки – яхта Golsling 3.15</figcaption>
+        </figure>
+        <div class="news-item__author">
+          <div class="news-item__author-wrapper">
+            <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37"
+              alt="Аватар автора">
+            <a class="news-item__author-name" href="#">Денис Иванов</a>
+            <time class="news-item__author-date" datetime="2022-06-15">15.06.2022</time>
+          </div>
+          <button class="news-item__share-button">
+            <span class="visually-hidden">Ретвит</span>
+          </button>
         </div>
-        <button class="news-item__retweet-button">
-          <span class="visually-hidden">Ретвит</span>
-        </button>
-      </div>
-    </li>
-    <li class="news__item news-item news-item">
-      <h3 class="news-item__headline">Регате быть!</h3>
-      <p class="news-item__text">
-        Из-за карантина весенние регаты отменили, но мы надеялись, что летние соревнования
-        состоятся. С радостью сообщаем, что летняя ...
-      </p>
-      <figure>
-        <img class="news-item__image" src="img/news/news-3.jpg" width="370" height="130" alt="Девушка стоит у руля яхты">
-        <figcaption class="news-item__image-desc">Участница регаты 2021 Ирина Петрова</figcaption>
-      </figure>
-      <div class="news-item__author">
-        <div class="news-item__author-wrapper">
-          <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
-          <span class="news-item__author-name">Денис Иванов</span>
-          <time class="news-item__author-date" datetime="2022-06-10">10.06.2022</time>
+      </li>
+      <li class="news__item news-item  news-item--medium news-item--small">
+        <h3 class="news-item__headline">
+          <a class="news-item__link" href="#">
+            Регате быть!
+          </a>
+        </h3>
+        <p class="news-item__text">
+          Из-за карантина весенние регаты отменили, но мы надеялись, что летние соревнования состоятся. С радостью
+          сообщаем, что летняя регата Race Sochi Sail все же ...
+        </p>
+        <figure class="news-item__image-wrapper">
+          <img class="news-item__image" src="img/news/news-3.jpg" width="370" height="130"
+            alt="Девушка стоит у руля яхты">
+          <figcaption class="news-item__image-desc">Участница регаты 2021 Ирина Петрова</figcaption>
+        </figure>
+        <div class="news-item__author">
+          <div class="news-item__author-wrapper">
+            <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37"
+              alt="Аватар автора">
+            <a class="news-item__author-name" href="#">Денис Иванов</a>
+            <time class="news-item__author-date" datetime="2022-06-10">10.06.2022</time>
+          </div>
+          <button class="news-item__share-button">
+            <span class="visually-hidden">Ретвит</span>
+          </button>
         </div>
-        <button class="news-item__retweet-button">
-          <span class="visually-hidden">Ретвит</span>
-        </button>
-      </div>
-    </li>
-    <li class="news__item news-item news-item">
-      <h3 class="news-item__headline">Итоги весенних регат</h3>
-      <p class="news-item__text">
-        Весенние регаты были очень впечатляющими, это отметили и участники и зрители. Вместе с
-        председателем совета федерации яхтинга Михаилом Сергеевичем ...
-      </p>
-      <figure>
-        <img class="news-item__image" src="img/news/news-4.jpg" width="370" height="130" alt="Девушка стоит у руля яхты">
-        <figcaption class="news-item__image-desc">Участник регаты 2022 Иван Семенов</figcaption>
-      </figure>
-      <div class="news-item__author">
-        <div class="news-item__author-wrapper">
-          <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
-          <span class="news-item__author-name">Денис Иванов</span>
-          <time class="news-item__author-date" datetime="2022-06-05">05.06.2022</time>
+      </li>
+      <li class="news__item news-item  news-item--medium news-item--small">
+        <h3 class="news-item__headline">
+          <a class="news-item__link" href="#">
+            Итоги весенних регат
+          </a>
+        </h3>
+        <p class="news-item__text">
+          Весенние регаты были очень впечатляющими, это отметили и участники и зрители. Вместе с председателем совета
+          федерации яхтинга Михаилом Сергеевичем ...
+        </p>
+        <figure class="news-item__image-wrapper">
+          <img class="news-item__image" src="img/news/news-4.jpg" width="370" height="130"
+            alt="Девушка стоит у руля яхты">
+          <figcaption class="news-item__image-desc">Участник регаты 2022 Иван Семенов</figcaption>
+        </figure>
+        <div class="news-item__author">
+          <div class="news-item__author-wrapper">
+            <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37"
+              alt="Аватар автора">
+            <a class="news-item__author-name" href="#">Денис Иванов</a>
+            <time class="news-item__author-date" datetime="2022-06-05">05.06.2022</time>
+          </div>
+          <button class="news-item__share-button">
+            <span class="visually-hidden">Ретвит</span>
+          </button>
         </div>
-        <button class="news-item__retweet-button">
-          <span class="visually-hidden">Ретвит</span>
-        </button>
-      </div>
-    </li>
-    <li class="news__item news-item news-item">
-      <h3 class="news-item__headline">Новинки яхт 2022</h3>
-      <p class="news-item__text">
-        На выставке Sail Boat Europe были представлены новые модели яхт разных классов. Удивительные инновации,
-        совершенные технологии представлены ...
-      </p>
-      <figure>
-        <img class="news-item__image" src="img/news/news-5.jpg" width="370" height="130" alt="Девушка стоит у руля яхты">
-        <figcaption class="news-item__image-desc">Выставка Sail Boat Europe 2022</figcaption>
-      </figure>
-      <div class="news-item__author">
-        <div class="news-item__author-wrapper">
-          <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37" alt="Аватар автора">
-          <span class="news-item__author-name">Денис Иванов</span>
-          <time class="news-item__author-date" datetime="2022-06-01">01.06.2022</time>
+      </li>
+      <li class="news__item news-item  news-item--medium news-item--small">
+        <h3 class="news-item__headline">
+          <a class="news-item__link" href="#">
+            Новинки яхт 2022
+          </a>
+        </h3>
+        <p class="news-item__text">
+          На выставке Sail Boat Europe были представлены новые модели яхт разных классов. Удивительные инновации,
+          совершенные технологии представлены ...
+        </p>
+        <figure class="news-item__image-wrapper">
+          <img class="news-item__image" src="img/news/news-5.jpg" width="370" height="130"
+            alt="Девушка стоит у руля яхты">
+          <figcaption class="news-item__image-desc">Выставка Sail Boat Europe 2022</figcaption>
+        </figure>
+        <div class="news-item__author">
+          <div class="news-item__author-wrapper">
+            <img class="news-item__author-avatar" src="img/author-photo-2.jpg" width="37" height="37"
+              alt="Аватар автора">
+            <a class="news-item__author-name" href="#">Денис Иванов</a>
+            <time class="news-item__author-date" datetime="2022-06-01">01.06.2022</time>
+          </div>
+          <button class="news-item__share-button">
+            <span class="visually-hidden">Ретвит</span>
+          </button>
         </div>
-        <button class="news-item__retweet-button">
-          <span class="visually-hidden">Ретвит</span>
-        </button>
-      </div>
-    </li>
+      </li>
+    </ul>
   </section>
   <footer class="footer">
-    <div class="footer__copyright">
-      <a class="footer__logo" href="#">
-        <img src="img/logotype.svg" width="100" height="106" alt="Логотип">
-      </a>
-      <p class="footer__copyright-text">
-        <a class="footer__copyright-link" href="#">Политика конфиденциальности</a><br>
-        Яхтклуб ©2020 Все права защищены
-      </p>
-    </div>
-    <div class="footer__navigation-wrapper">
-      <div class="footer__navigation">
-        <h3 class="footer__navigation-title">Компания</h3>
-        <ul class="footer__navigation-list">
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              О нас
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Команда
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Новости
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Блог
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Галерея
-            </a>
-          </li>
-        </ul>
+    <div class="footer__inner">
+      <div class="footer__copyright">
+        <a class="footer__logo" href="#">
+          <img class="footer__logo-image" src="img/logotype.svg" width="100" height="106" alt="Логотип">
+        </a>
+        <p class="footer__copyright-text">
+          <a class="footer__copyright-link" href="#">
+            Политика конфиденциальности
+          </a>
+        </p>
+        <p class="footer__copyright-text">
+          Яхтклуб ©2020 Все права защищены
+        </p>
       </div>
-      <div class="footer__navigation">
-        <h3 class="footer__navigation-title">Яхт-клуб</h3>
-        <ul class="footer__navigation-list">
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Правила
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Стоимость
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Анкета
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              FAQ
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Партнеры
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__navigation">
-        <h3 class="footer__navigation-title">Регаты</h3>
-        <ul class="footer__navigation-list">
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Корпоративные регаты
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Календарь мероприятий
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Стать участником
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Результаты регат
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Обучение
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__navigation">
-        <h3 class="footer__navigation-title">Услуги</h3>
-        <ul class="footer__navigation-list">
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Аренда яхты
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Свадьба на яхте
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              День рождения
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Бизнес-встречи
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Прогулки
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__navigation">
-        <h3 class="footer__navigation-title">Регаты</h3>
-        <ul class="footer__navigation-list">
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Корпоративные регаты
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Календарь мероприятий
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Стать участником
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Результаты регат
-            </a>
-          </li>
-          <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">
-              Обучение
-            </a>
-          </li>
-        </ul>
+      <div class="footer__navigation-wrapper">
+        <div class="footer__navigation">
+          <h3 class="footer__navigation-title">Компания</h3>
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Команда
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Новости
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Галерея
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__navigation">
+          <h3 class="footer__navigation-title">Яхт-клуб</h3>
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Правила
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Стоимость
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Анкета
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Партнеры
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__navigation">
+          <h3 class="footer__navigation-title">Услуги</h3>
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Аренда яхты
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Свадьба на яхте
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                День рождения
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Бизнес-встречи
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Прогулки
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__navigation">
+          <h3 class="footer__navigation-title">Регаты</h3>
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Корпоративные регаты
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Календарь мероприятий
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Стать участником
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Результаты регат
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Обучение
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

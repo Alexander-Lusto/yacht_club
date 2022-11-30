@@ -62,6 +62,11 @@
   }
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+}
+
 .socials__list {
   display: flex;
   justify-content: flex-start;
@@ -77,6 +82,10 @@
 
   &:not(:last-child) {
     margin-right: 13px;
+  }
+
+  &--small:not(:last-child) {
+    margin-right: 12px;
   }
 }
 
@@ -110,4 +119,18 @@
   &:active {
     opacity: 0.5;
   }
+
+  &--small {
+    height: 34px;
+    width: 34px;
+  }
+}
+
+.socials__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  color: #283C54;
+
+  margin-right: 15px;
 }
